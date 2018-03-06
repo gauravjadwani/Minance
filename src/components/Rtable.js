@@ -32,27 +32,36 @@ render() {
 
   const style = {
     height: 10000,
-    width: 1000,
+    width: 900,
     margin: 20,
     textAlign: 'center',
     display: 'inline-block',
   };
     console.log("demo",this.state.dataList);
     return (
-       <MuiThemeProvider>
-       <Paper style={style} zDepth={5} children={
-         <BootstrapTable data={this.state.dataList} version='4' search>
+      <div className="row">
+        <div className="col-md-1">
+        </div>
+        <div className="col-md-10">
+          <MuiThemeProvider>
+          <Paper style={style} zDepth={5} children={
+            <BootstrapTable data={this.state.dataList} version='4' search>
 
-      <TableHeaderColumn isKey dataField='LEDGER_ID'>LEDGER_ID</TableHeaderColumn>
-      <TableHeaderColumn dataField='CLIENT_ID'>CLIENT_ID</TableHeaderColumn>
-      <TableHeaderColumn dataField='SEGMENT'>SEGMENT</TableHeaderColumn>
-         <TableHeaderColumn dataField='VOUCHER_DATE'>VOUCHER_DATE</TableHeaderColumn>
-            <TableHeaderColumn dataField='VOUCHER_NUMBER'>VOUCHER_NUMBER</TableHeaderColumn>
-               <TableHeaderColumn dataField='NARRATION'>NARRATION</TableHeaderColumn>
-                  <TableHeaderColumn dataField='AMOUNT'>AMOUNT</TableHeaderColumn>
-                     <TableHeaderColumn dataField='PRODUCT'>PRODUCT</TableHeaderColumn>
-  </BootstrapTable>}/>
-  </MuiThemeProvider>
+         <TableHeaderColumn isKey dataField='LEDGER_ID'>LEDGER_ID</TableHeaderColumn>
+         <TableHeaderColumn dataField='CLIENT_ID'>CLIENT_ID</TableHeaderColumn>
+         <TableHeaderColumn dataField='SEGMENT'>SEGMENT</TableHeaderColumn>
+            <TableHeaderColumn dataField='VOUCHER_DATE'>VOUCHER_DATE</TableHeaderColumn>
+               <TableHeaderColumn dataField='VOUCHER_NUMBER'>VOUCHER_NUMBER</TableHeaderColumn>
+                  <TableHeaderColumn dataField='NARRATION'>NARRATION</TableHeaderColumn>
+                     <TableHeaderColumn dataField='AMOUNT'>AMOUNT</TableHeaderColumn>
+                        <TableHeaderColumn dataField='PRODUCT'>PRODUCT</TableHeaderColumn>
+     </BootstrapTable>}/>
+     </MuiThemeProvider>
+        </div>
+        <div className="col-md-1">
+        </div>
+
+</div>
 
     );
   }

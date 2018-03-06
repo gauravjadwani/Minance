@@ -58,7 +58,7 @@ class Pichart extends Component {
        </div>
        <div className="col-md-6">
          <MuiThemeProvider>
-          <Paper style={style} zDepth={5} circle={true} children={<PieChart
+          <Paper style={style} zDepth={1} circle={true} children={<PieChart
             data={this.state.dataList} expandOnHover expandSize={56} viewBoxSize={1000} strokeWidth={10}/>}/>
     </MuiThemeProvider>
        </div>
