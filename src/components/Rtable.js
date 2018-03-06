@@ -26,7 +26,7 @@ fetch('https://cl7ry4y706.execute-api.ap-south-1.amazonaws.com/api/ledger')
 }
 render() {
 const style = {
-    height: 1000,
+    height: 10020,
     width: 900,
     margin: 20,
     textAlign: 'center',
